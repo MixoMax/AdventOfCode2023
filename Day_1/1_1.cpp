@@ -14,7 +14,8 @@ int main(int argc, char *argv[]) {
     string line;
 
     if (!input_lines_file.is_open()) { //check if we can open the input file
-        printf("Failed to open ./data.txt");
+        cout << "Could not open ./data.txt" << endl;
+        return 1;
     }
 
     while(std::getline(input_lines_file, line)) {
@@ -46,6 +47,6 @@ int main(int argc, char *argv[]) {
     cout << sum << endl; // -> 54634
 
     input_lines_file.close();
-    return 0;
+    return sum;
 
 }
