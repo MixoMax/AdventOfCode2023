@@ -1,4 +1,8 @@
+#Advent of Code 2023 Day 4 Part 2
+
 import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 class Game:
     def __init__(self, game_str):
